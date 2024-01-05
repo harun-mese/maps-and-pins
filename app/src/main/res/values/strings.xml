@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Maps And Pins</string>
+    <string name="hello_blank_fragment">Screen</string>
+    <string name="nav1">Map</string>
+    <string name="nav2">Add</string>
+    <string name="nav3">Profile</string>
 </resources>

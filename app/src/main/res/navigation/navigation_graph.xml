@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/mapFragment">
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="www.harunmese.dev.mapsandpins.pages.MapFragment"
+        android:label="fragment_map"
+        tools:layout="@layout/fragment_map" >
+        <action
+            android:id="@+id/action_mapFragment3_to_pinViewFragment"
+            app:destination="@id/pinViewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addFragment"
+        android:name="www.harunmese.dev.mapsandpins.pages.AddFragment"
+        android:label="fragment_add"
+        tools:layout="@layout/fragment_add" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="www.harunmese.dev.mapsandpins.pages.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment2_to_pinViewFragment"
+            app:destination="@id/pinViewFragment" />
+        <action
+            android:id="@+id/action_profileFragment2_to_settingFragment"
+            app:destination="@id/settingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pinViewFragment"
+        android:name="www.harunmese.dev.mapsandpins.pages.PinViewFragment"
+        android:label="fragment_pin_view"
+        tools:layout="@layout/fragment_pin_view" />
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="www.harunmese.dev.mapsandpins.pages.SettingFragment"
+        android:label="fragment_setting"
+        tools:layout="@layout/fragment_setting" />
+</navigation>
